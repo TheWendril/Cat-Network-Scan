@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/wendril/Área de trabalho/tcc_project/dist/CMakeFiles/bootloader
+/home/wendril/Área de trabalho/tcc_project/dist/CMakeFiles/bootloader.rule
+/home/wendril/Área de trabalho/tcc_project/dist/CMakeFiles/bootloader-complete.rule
+/home/wendril/Área de trabalho/tcc_project/dist/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/wendril/Área de trabalho/tcc_project/dist/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/wendril/Área de trabalho/tcc_project/dist/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/wendril/Área de trabalho/tcc_project/dist/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/wendril/Área de trabalho/tcc_project/dist/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/wendril/Área de trabalho/tcc_project/dist/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/wendril/Área de trabalho/tcc_project/dist/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
