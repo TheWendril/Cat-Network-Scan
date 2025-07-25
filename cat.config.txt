@@ -1,3 +1,3 @@
 project_name=tcc_project
 platform=esp32s2
-debug=false
+debug=true

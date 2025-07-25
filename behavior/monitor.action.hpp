@@ -16,13 +16,11 @@ public:
         scan_config.channel = 0;
         scan_config.show_hidden = true;
         scan_config.scan_type = WIFI_SCAN_TYPE_ACTIVE;
-        scan_config.scan_time.active.min = 1000;
-        scan_config.scan_time.active.max = 1200;
+        scan_config.scan_time.active.min = 3500;
+        scan_config.scan_time.active.max = 4000;
 
-        for (int s = 0; s < 3; ++s) {
-            esp_wifi_scan_start(&scan_config, true);
-            vTaskDelay(pdMS_TO_TICKS(1000));  
-        }
+        esp_wifi_scan_start(&scan_config, true);
+        vTaskDelay(pdMS_TO_TICKS(2000));  
 
         uint16_t ap_num = 0;
         esp_wifi_scan_get_ap_num(&ap_num);
@@ -32,6 +30,9 @@ public:
         for (int i = 0; i < ap_num; i++) {
             printf("SSID: %s, RSSI: %d\n", ap_records[i].ssid, ap_records[i].rssi);
         }
+
+        printf("Redes Detectadas: %d\n", ap_num);
+        printf("================================================================\n");
 
         auto apnum = std::make_shared<AP_NUM>();
         apnum->ap_num = ap_num;
